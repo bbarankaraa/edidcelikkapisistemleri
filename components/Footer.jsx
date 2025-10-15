@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Separator } from "./ui/separator"
-import { Instagram, Mail, Phone } from "lucide-react"
+import { Instagram, Mail, MailIcon, Phone } from "lucide-react"
 import { FaWhatsapp } from "react-icons/fa"
 import Image from "next/image"
 import { navItems } from "@/lib/navItems"
@@ -38,9 +38,9 @@ const Footer = () => {
           <Separator />
           <ul className="flex flex-col gap-2">
               <li>
-                <Link href={""} className={"hover:text-main duration-200 flex items-center gap-2"}>
+                <Link href={"https://instagram.com/edit.celikkapi/"} target="_blank" className={"hover:text-main duration-200 flex items-center gap-2"}>
                   <Instagram className="size-5" />
-                  <span>@edidcelikkapisistemleri</span>
+                  <span>@edid.celikkapi</span>
                 </Link>
               </li>
               <li>
@@ -56,16 +56,16 @@ const Footer = () => {
           <Separator />
           <ul className="flex flex-col gap-2">
               <li>
-                <Link href={""} className={"hover:text-main duration-200 flex items-center gap-2"}>
+                <a href="tel:+905012262664" className={"hover:text-main duration-200 flex items-center gap-2"}>
                   <Phone className="size-5" />
-                  <span>+90 555 555 55 55</span>
-                </Link>
+                  <span>+90 501 226 26 64</span>
+                </a>
               </li>
               <li>
-                <Link href={""} className={"hover:text-main duration-200 flex items-center gap-2"}>
-                  <Mail className="size-5" />
+                <a href={"mailto:edidcelikkapisistemleri@gmail.com"} className={"hover:text-main duration-200 flex items-center gap-2"}>
+                  <MailIcon className="size-5" />
                   <span>edidcelikkapisistemleri@gmail.com</span>
-                </Link>
+                </a>
               </li>
             </ul>
         </div>

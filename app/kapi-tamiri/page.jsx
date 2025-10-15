@@ -4,6 +4,7 @@ import Image from "next/image"
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ShieldCheck, Hammer, Wrench, Sparkles } from "lucide-react"
+import Link from "next/link"
 
 const services = [
   {
@@ -46,12 +47,14 @@ const FixDoorPage = () => {
             <Button
               className="bg-main text-white hover:bg-main/80 cursor-pointer px-8 py-4 text-lg"
             >
-              Hemen Ara
+              <a href="tel:+905012262664">Hemen Ara</a>
             </Button>
             <Button
               className="bg-green-500 text-white hover:bg-green-600 cursor-pointer px-8 py-4 text-lg"
             >
+              <Link href="https://wa.me/905012262664" target="_blank">
               WhatsApp ile İletişim
+              </Link>
             </Button>
           </div>
         </div>

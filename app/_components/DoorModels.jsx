@@ -92,9 +92,9 @@ const DoorModels = () => {
               </CardContent>
 
               <CardFooter className="flex justify-center">
-                <Button className="bg-main text-white hover:bg-main/80 cursor-pointer">
+                <a href="tel:+905012262664" className="bg-main text-white hover:bg-main/80 cursor-pointer px-3 py-1 rounded-md">
                   Fiyat Al
-                </Button>
+                </a>
               </CardFooter>
             </Card>
           </motion.div>

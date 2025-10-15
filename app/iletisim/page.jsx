@@ -1,5 +1,6 @@
 import { Phone, Mail, Smartphone } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 const ContactPage = () => {
   return (
@@ -12,11 +13,11 @@ const ContactPage = () => {
         <div className="flex flex-col items-center text-center p-6 rounded-xl shadow-lg bg-white">
           <Phone size={40} className="text-main mb-4" />
           <h2 className="text-xl font-semibold mb-2">Telefon</h2>
-          <p className="text-gray-600 mb-4">+90 555 123 4567</p>
+          <p className="text-gray-600 mb-4">+90 501 226 2664</p>
           <Button
             className="bg-main text-white hover:bg-main/80 cursor-pointer px-6 py-3"
           >
-            Hemen Ara
+            <a href="tel:+905012262664">Hemen Ara</a>
           </Button>
         </div>
 
@@ -24,12 +25,14 @@ const ContactPage = () => {
         <div className="flex flex-col items-center text-center p-6 rounded-xl shadow-lg bg-white">
           <Smartphone size={40} className="text-green-500 mb-4" />
           <h2 className="text-xl font-semibold mb-2">WhatsApp</h2>
-          <p className="text-gray-600 mb-4">+90 555 123 4567</p>
+          <p className="text-gray-600 mb-4">+90 501 226 2664</p>
           <Button
             className="bg-green-500 text-white hover:bg-green-600 cursor-pointer px-6 py-3"
            
           >
-            Mesaj Gönder
+            <Link href="https://wa.me/905012262664" target="_blank">
+              WhatsApp ile İletişim
+              </Link>
           </Button>
         </div>
 
@@ -37,11 +40,13 @@ const ContactPage = () => {
         <div className="flex flex-col items-center text-center p-6 rounded-xl shadow-lg bg-white">
           <Mail size={40} className="text-blue-500 mb-4" />
           <h2 className="text-xl font-semibold mb-2">E-posta</h2>
-          <p className="text-gray-600 mb-4">info@altinsteel.com</p>
+          <p className="text-gray-600 mb-4">edidcelikkapisistemleri@gmail.com</p>
           <Button
             className="bg-blue-500 text-white hover:bg-blue-600 cursor-pointer px-6 py-3"
           >
+            <a href="mailto:edidcelikkapisistemleri@gmail.com">
             Mail Gönder
+            </a>
           </Button>
         </div>
       </div>

@@ -15,35 +15,35 @@ const Topbar = () => {
             <div className="flex items-center space-x-3">
                 <Tooltip>
                     <TooltipTrigger asChild>
-                        <div className="flex items-center text-sm space-x-1 text-white font-semibold hover:text-white cursor-pointer">
+                        <a href="mailto:edidcelikkapisistemleri@gmail.com" className="flex items-center text-sm space-x-1 text-white font-semibold hover:text-white cursor-pointer">
                             <Mail size={18} />
                             <h6>İLETİŞİM</h6>
-                        </div>
+                        </a>
                     </TooltipTrigger>
                     <TooltipContent>
-                        <p>altincelikkapi@gmail.com</p>
+                        <p>edidcelikkapisistemleri@gmail.com</p>
                     </TooltipContent>
                 </Tooltip>
                 <Tooltip>
                     <TooltipTrigger asChild>
-                        <div className="flex items-center text-sm space-x-1 text-customgray font-semibold hover:text-white cursor-pointer">
+                        <a href="tel:+905012262664" className="flex items-center text-sm space-x-1 text-customgray font-semibold hover:text-white cursor-pointer">
                             <Phone size={18} />
-                            <h6>0 555 555 55 55</h6>
-                        </div>
+                            <h6>0 501 226 26 64</h6>
+                        </a>
                     </TooltipTrigger>
                     <TooltipContent>
-                        <p>0 555 555 55 55</p>
+                        <p>0 501 226 26 64</p>
                     </TooltipContent>
                 </Tooltip>
                 <Tooltip>
                     <TooltipTrigger asChild>
-                        <Link href="" className="flex items-center text-sm space-x-1 text-customgray font-semibold hover:text-white cursor-pointer">
+                        <Link href="https://wa.me/905012262664" target="_blank" className="flex items-center text-sm space-x-1 text-customgray font-semibold hover:text-white cursor-pointer">
                             <FaWhatsapp size={18} />
                             <h6>WHATSAPP</h6>
                         </Link>
                     </TooltipTrigger>
                     <TooltipContent>
-                        <p>+90 555 555 55 55</p>
+                        <p>+90 501 226 26 64</p>
                     </TooltipContent>
                 </Tooltip>
             </div>
