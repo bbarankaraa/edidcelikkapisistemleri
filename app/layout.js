@@ -8,7 +8,7 @@ import WPButton from "@/components/WPButton";
 
 const poppins = Poppins({
   variable: "--font-poppins",
-  weight: ["100","200","300","400","500","600","700","800"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata = {
@@ -19,23 +19,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="tr">
-      <body
-        className={`${poppins.variable} antialiased`}
-      >
+      <head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17653970524"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'AW-17653970524');
+        </script>
+      </head>
+      <body className={`${poppins.variable} antialiased`}>
         <CallBubble />
         <WPButton />
         <Topbar />
         <Navbar />
         {children}
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17653970524">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
 
-  gtag('config', 'AW-17653970524');
-</script>
         <Footer />
       </body>
     </html>
