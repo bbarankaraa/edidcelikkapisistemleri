@@ -20,7 +20,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="tr">
       <head>
-        <script
+        
+      </head>
+      <body className={`${poppins.variable} antialiased`}>
+        <CallBubble />
+        <WPButton />
+        <Topbar />
+        <Navbar />
+        {children}
+<script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-17653970524"
         ></script>
@@ -29,14 +37,6 @@ export default function RootLayout({ children }) {
           {dataLayer.push(arguments)}
           gtag('js', new Date()); gtag('config', 'AW-17653970524');
         </script>
-      </head>
-      <body className={`${poppins.variable} antialiased`}>
-        <CallBubble />
-        <WPButton />
-        <Topbar />
-        <Navbar />
-        {children}
-
         <Footer />
       </body>
     </html>
