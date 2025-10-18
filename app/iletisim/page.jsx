@@ -57,7 +57,7 @@ const ContactPage = () => {
           <h2 className="text-2xl font-semibold">Adres</h2>
           <p className="text-gray-600">
             Edid Çelik Kapı Merkezi<br />
-            Mahalle Cd. No:12, Şehir / Türkiye
+            Karadolap Mah Abuhayat Cad. NO:26 Eyüp / Alibeyköy
           </p>
           <p className="text-gray-600 font-semibold">Çalışma Saatleri: 09:00 - 18:00</p>
         </div>
